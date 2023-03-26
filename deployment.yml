@@ -19,10 +19,10 @@ spec:
       containers:
         - name: quote
           # image: docker.io/datawire/quote:0.4.1
-          image: musman3/flask-k8s:6
+          image: nginx
           ports:
             - name: http
-              containerPort: 5000
+              containerPort: 80
           resources:
             requests:
               cpu: 100m
